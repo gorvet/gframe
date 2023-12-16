@@ -1,0 +1,394 @@
+/**
+<!-- =======================================================
+  * Template Name: Common GOcu - v1.0.0
+  * Template URL:  
+  * Author: Juank de Gorvet
+  * License:  
+  ======================================================== -->
+
+
+/*--------------------------------------------------------------
+# root
+--------------------------------------------------------------*/
+:root {
+    --gorvet:#EE3054;
+
+    --primario:#2c7be5;
+    --primario_oscuro:#2569c3;
+    --primario_fondo:#D8E2EF;
+
+
+
+
+
+
+
+    --footer-link:#BBBFC3;
+    --footer-text:#748194;
+    --footer:#0B1727;
+    --footer-line:#132944;
+
+
+
+
+    --Primario_claro:#5980F5;
+    
+    
+
+    --Secundario:#67DBDA;
+    --Secundario_claro:#9AE8E6;
+    --Secundario_oscuro:#31CFCC;
+    
+    --texto:#333;
+    --texto_gris:#5E6E82;
+    --texto_gris_claro:#9DA9BB;
+
+    
+    
+    --Rojo:#DC0F49;
+
+    
+ --negro: #000000;
+    --texto-primario:#333;
+    --principal:#3caa7b;
+    --principal-hover:#89f38f;
+    --gris-picono:#6F767E;
+    --gris-back-bicono:#E4E6EB;
+    --gris-back-bicono-hover:#CED1D5;
+    --gris-bicono:#6F767E;
+   
+   --back-dark: #07121F;
+   --back-light: #EDF2F9;
+
+    font-size: 14px!important;
+  --bs-table-hover-bg: #D8E2EF!important;
+};
+ 
+ 
+
+html {
+  overflow: auto!important;
+  overflow-x: auto!important;
+  color: var(--texto);
+  font-weight: normal;
+
+}
+
+
+/*-----
+Configuracion
+-----*/
+ .btn-primary{
+  background-color: var(--primario)!important;
+  border: none;
+  min-width: 150px;
+  padding: 10px 20px;
+}
+.btn-primary:hover{
+    background-color: var(--primario_oscuro)!important;
+    border: none!important;
+}
+.btn-primary:focus,.btn-primary:focus-visible{
+   box-shadow: none!important;
+ border: none!important;
+}
+
+ .btn-secondary{
+  background-color: #e8ebf2;
+  border: none;
+  color: var(--texto);
+
+}
+.btn-secondary:hover{
+  background-color: #dbe0eb;
+  border: none;
+  color: var(--texto);
+}
+
+.btn-tercero {
+  border: 1px solid #dbe0eb;
+  background-color: #fff;
+  color: var(--texto);
+}
+.btn-tercero:hover,.btn-tercero:active {
+ background: #f4f6fa;
+border: 1px solid #c3cbdc;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 30px 0;
+}
+
+.section-bg {
+  background-color: var(--primario_fondo);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+
+}
+.section-title h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+.section-title p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.5;
+} 
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.logo {
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 280px;
+  }
+}
+
+.logo img {
+  max-height: 26px;
+  margin-right: 6px;
+}
+
+.logo span {
+  font-size: 26px;
+  font-weight: 700;
+  color:var(--ptimario);
+ 
+}
+
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  height: 60px;
+  webkit-box-shadow: 0 .5rem .5rem -0.5rem rgba(0,0,0,.2) !important;
+  box-shadow: 0 .5rem .5rem -0.5rem rgba(0,0,0,.2) !important;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.header .toggle-sidebar-btn {
+  font-size: 32px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: var(--texto);
+}
+
+  
+/*--------------------------------------------------------------
+# Header Nav
+--------------------------------------------------------------*/
+ .navbar   {
+ padding: 0;
+}
+
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  
+  padding: 0 5px  ;
+  font-size: 1rem;
+  color: var(--texto);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+
+.navbar a:hover,.navbar a.show ,.navbar a.active   {
+  color: var(--primario);
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+
+
+.navbar .nav-icon {
+  font-size: 22px;
+  color: var(--texto);
+  margin-right: 25px;
+  position: relative;
+}
+ 
+ .navbar .dropdown-menu {
+  color: var(--texto);
+}
+
+ 
+.navbar .dropdown-menu span {
+  font-weight: 600;
+}
+
+ 
+
+.navbar .dropdown-menu { 
+  min-width: 240px;
+  padding-bottom: 0;
+  background: #fff;
+  color: var(--texto);
+  border-radius: 5px;
+  border: 1px solid  rgba(0, 0, 0, 0.125);
+  box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07)
+}
+.dropdown-menu-arrow::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  position: absolute;
+  top: -7px;
+  right: 20px;
+  transform: rotate(45deg);
+  border-top: 1px solid #eaedf1;
+  border-left: 1px solid #eaedf1;
+}
+
+
+ 
+
+.navbar .dropdown-menu .dropdown-item {
+  padding: 5px 15px;
+  transition: 0.3s;
+}
+
+.navbar .dropdown-menu .dropdown-item i {
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 0;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: var(--back-light);
+}
+
+.navbar .dropdown-divider {margin: 0;} 
+
+
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Montserrat', 'sans-serif','helvetica', 'arial' ;
+  color: var(--texto);
+  background:var(--back-light); 
+  overflow: auto;
+  font-weight: normal;
+  line-height: 2;
+}
+
+a {
+  color: var(--primario);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primario_oscuro);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/**/
+.card{
+   background: #fff;
+   color: var(--texto);
+   border-radius: 5px;
+   border: 1px solid  rgba(0, 0, 0, 0.125);
+   box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07)
+
+}
+
+
+
+
+
+
+/*formularios*/
+form label{
+font-weight: 600;
+color: var(--texto_gris);
+}
+.form-check-input {
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: .40em;
+  vertical-align: top;
+  background-color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  print-color-adjust: exact;
+  display: inline;
+}
+ input::placeholder { color: #c2c2c2 !important; }
+ input:-ms-input-placeholder { color: #c2c2c2 !important; } /* IE 10+ */
+ input::-webkit-input-placeholder { color: #c2c2c2 !important; } /* WebKit */
+ input::-moz-placeholder { color: #c2c2c2 !important; } /* Firefox 19+ */
+
+
+
+
+/*modal*/
+ .modal .btn-modal{
+  min-width: fit-content;
+  justify-self: end;
+  padding: 8px 12px ;
+}
+.modal p {
+  color:var(--texto);
+font-size:  1.2rem;
+line-height: 1.5;
+}
+.modal .lead {
+font-weight: bold;
+  text-align: left;
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+  line-height: 1.5;
+}
+
+.text-primario{ color: var(--primario); }
+
+.modal-title{font-weight: bold;}
