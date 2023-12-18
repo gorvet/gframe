@@ -18,7 +18,7 @@ Podrás encontrar ejemplos de CRUD internos próximamente.
 <li>2- Crea una Base de Datos vacía.</li>
 <li>3- Abre el navegador y en la url de tu proyecto escribe <code>install.php</code> y sigue las instrucciones del asistente.</li>
 </ul>
-Al ejecutar el <code>install.php</code> se creará un archivo Config.php con las constantes necesarias para ejecutar correctamente las conexiones a la Base de Datos entre otras funionalidades como crear las primeras tablas necesarias de G-Frame (control de usuarios, etc)
+Al ejecutar el <code>install.php</code> se creará un archivo Config.php con las constantes necesarias para ejecutar correctamente las conexiones a la Base de Datos entre otras funionalidades como crear las primeras tablas necesarias de G-Frame (control de usuarios, etc).
 
     
 
