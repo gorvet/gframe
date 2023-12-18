@@ -14,8 +14,11 @@ Podrás encontrar ejemplos de CRUD internos próximamente.
 
 Instalación:
 
+1- Copia los archivos de G-Frame en tu servidor
+2- Crea una Base de Datos vacía
+3- Abre el navegador y en la url de tu proyecto escribe install.php y sigue las instrucciones del asistente. 
 
-
+Al ejecutar el install.php se creará un archivo Config.php con las constantes necesarias para ejecutar correctamente las conexiones a la Base de Datos entre otras funionalidades como crear las primeras tablas necesarias de G-Frame (control de usuarios, etc)
 
     
 
