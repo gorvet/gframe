@@ -1,0 +1,32 @@
+
+ 
+.install-card{
+padding: 30px;
+}
+.install-card-popup{
+padding: 0 0 1.25rem!important;
+}
+
+.install-logo{ max-height: 70px;width: auto; }
+.install-card form p{
+ margin-top: -.3rem;
+display: block;
+line-height: 1.5;
+}
+
+
+
+.install-card h1, .install-card h2{
+font-weight: bold;
+font-size: 1.6rem;
+}
+
+ 
+.install-card-popup li{
+margin-bottom: .5rem;
+}
+
+
+
+
+ 

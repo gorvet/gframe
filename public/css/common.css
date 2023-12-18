@@ -105,16 +105,23 @@ Configuracion
   color: var(--texto);
 }
 
-.btn-tercero {
-  border: 1px solid #dbe0eb;
-  background-color: #fff;
-  color: var(--texto);
+ .btn-tercero{
+  background-color: var(--bs-red)!important;
+  color: #fff;
+  border: none;
+  min-width: 150px;
+  padding: 10px 20px;
 }
-.btn-tercero:hover,.btn-tercero:active {
- background: #f4f6fa;
-border: 1px solid #c3cbdc;
+.btn-tercero:hover{
+    background-color: var(--bs-red)!important;
+    color: #fff;
+    border: none!important;
 }
-
+.btn-tercero:focus,.btn-primary:focus-visible{
+   box-shadow: none!important;
+ border: none!important;
+}
+ 
 
 /*--------------------------------------------------------------
 # Sections General

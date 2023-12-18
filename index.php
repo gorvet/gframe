@@ -1,12 +1,24 @@
 <?php 
 // index.php
+// Este archivo es la entrada principal de la aplicación
+
+// Verificar si el archivo config.php no existe para iniciar con la instalación
+
+if (!file_exists('core/Config.php') && file_exists('install.php')){
+    header('Location: install.php');
+    exit();
+}
+elseif (!file_exists('core/config.php') && !file_exists('install.php')) {
+   header('Location: 503.php');
+    exit();
+}
 
 require_once 'core/Config.php';
 require_once 'core/Router.php';
 require_once 'app/controllers/RenderController.php';
  
+ 
 session_start();
-
 
 // Generar token CSRF 
 if (!isset($_SESSION['csrf_token']) ) {

@@ -57,8 +57,27 @@ function swalAlert(swalOptions) {
 		confirmButtonText: "Cerrar",
 		customClass: {
 			confirmButton: "btn btn-primary",
+			denyButton: "btn btn-tercero",
 		},
 	};
-const options = { ...defaultOptions, ...swalOptions };
-return Swal.fire(options);
+  const options = mergeDeep(defaultOptions, swalOptions);
+  return Swal.fire(options);
+}
+
+
+function mergeDeep(target, source) {
+  if (typeof target !== 'object' || typeof source !== 'object') {
+    return source;
+  }
+
+  for (const key in source) {
+    if (source.hasOwnProperty(key)) {
+      if (source[key] instanceof Object) {
+        Object.assign(source[key], mergeDeep(target[key], source[key]));
+      }
+    }
+  }
+
+  Object.assign(target || {}, source);
+  return target;
 }
