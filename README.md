@@ -5,10 +5,17 @@ G-Frame es un mini framework PHP que utiliza jQuery y Bootstrap y está diseñad
 
 Este proyecto surge en primer lugar de la necesidad de querer entender la Programación Orientada a Objetos y la arquitectura MVC; y de el deseo de poder crear soluciones simples en PHP sin invertir tiempo significativo en aprender frameworks más grandes como Laravel o CakePHP. Incluso si tienes conocimientos básicos de PHP este "framework" te será fácil de entender y de utilizar para lanzar tus primeros MVP.
 
-<h2>Estado del Proyecto:</h2>
 
-Actualmente en desarrollo. 
-Podrás encontrar ejemplos de CRUD internos próximamente.
+<h2>Estado del Proyecto:</h2>
+El proyecto está actualmente en desarrollo. Se han tenido en cuenta muchas de las mejores prácticas de seguridad y de validación de datos 
+
+<h3>Control Auth:</h3>
+<ul>
+<li>Login</li>
+<li>Registro de usuario con validación por correo electrónico</li>
+<li>Recuperar contraseña</li>
+<li>Logout por inactividad</li>
+</ul>
 
 
 
