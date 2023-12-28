@@ -7,7 +7,14 @@ Este proyecto surge en primer lugar de la necesidad de querer entender la Progra
 
 
 <h2>Estado del Proyecto:</h2>
-El proyecto está actualmente en desarrollo. Se han tenido en cuenta muchas de las mejores prácticas de seguridad y de validación de datos 
+El proyecto está actualmente en desarrollo. Se han tenido en cuenta muchas de las mejores prácticas de seguridad y de validación de datos. 
+
+<h3>Seguridad:</h3>
+<ul>
+<li>Validación de datos en el lado del cliente y en el lado del servidor</li>
+<li>Validación de las peticiones de los formularios con Tokens CSRF</li>
+<li>Validación de acciones vs roles de usuario</li>
+</ul>
 
 <h3>Control Auth:</h3>
 <ul>
@@ -15,13 +22,23 @@ El proyecto está actualmente en desarrollo. Se han tenido en cuenta muchas de l
 <li>Registro de usuario con validación por correo electrónico</li>
 <li>Recuperar contraseña</li>
 <li>Logout por inactividad</li>
+<li>Validación de fortaleza de contraseña</li>
 </ul>
 
+<h3>Correos:</h3>
+<ul>
+<li>Uso de PHP Mailer para el envío seguro de correos</li>
+</ul>
+
+<h3>Notificaciones y alertas:</h3>
+<ul>
+<li>Notificaciones y alertas con Sweetalert2</li>
+</ul>
 
 
 <h2>Instalación:</h2>
 <ul>
-<li>1- Copia los archivos de G-Frame en tu servidor.</li>
+<li>1- Copia los archivos de G-Frame en tu servidor PHP.</li>
 <li>2- Crea una Base de Datos vacía.</li>
 <li>3- Abre el navegador y en la url de tu proyecto escribe <code>install.php</code> y sigue las instrucciones del asistente.</li>
 </ul>
