@@ -4,9 +4,7 @@
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-
-
-   <title><?= $this->metasController->getMetaTag('title') ?></title>
+   <title><?= $this->metasController->getMetaTag('title') ?> - GFrame</title>
 
    <!-- Favicons -->
    <link href="<?php echo site_url . '/public/img/favicon.png' ?>" rel="icon">

@@ -6,7 +6,6 @@
 
 // Inicializamos valores
 var toLogin = getNewURL('login')+'/login'// obtener la ruta
-
 $(window).on('load', function() {
   // Generamos contraseña aleatorea y actualziamos el MeterPassword
   $('#register_password').val(generatePassword());

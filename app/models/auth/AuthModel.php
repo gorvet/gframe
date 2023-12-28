@@ -179,7 +179,7 @@ function login(){
           $_SESSION['userEmail'] = $user['email'];
           $_SESSION['userRole'] = $user['user_role'];
           $_SESSION['lastActivity'] = time();
-          //$_SESSION['csrf_timestamp'] = time();//establezco una marca de tiempo
+          $_SESSION['csrfTimestamp'] = time();
         }
     }
  

@@ -6,7 +6,7 @@
           </div>
           <div class="card-body p-4 mt-3">
             <form method="post" id="register" class="needs-validation " novalidate>
-              <input type="hidden" calss="csrf_token" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+              <input type="hidden" calss="csrfToken" name="csrfToken" value="<?php echo $_SESSION['csrfToken']; ?>">
               <div class="mb-3">
                 <label class="form-label" for="register_email"> Correo electrónico</label>
                 <input class="form-control" type="email" name="register_email"  id="register_email" autocomplete="off" autofocus required pattern="^[a-z0-9_\-.]+@[a-z0-9_\-.]+\.[a-z]{2,3}$">

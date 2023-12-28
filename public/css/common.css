@@ -1,11 +1,3 @@
-/**
-<!-- =======================================================
-  * Template Name: Common GOcu - v1.0.0
-  * Template URL:  
-  * Author: Juank de Gorvet
-  * License:  
-  ======================================================== -->
-
 
 /*--------------------------------------------------------------
 # root
@@ -94,17 +86,22 @@ Configuracion
 }
 
  .btn-secondary{
-  background-color: #e8ebf2;
+  background-color: var(--bs-btn-bg)!important;
+  color: #fff;
   border: none;
-  color: var(--texto);
+  min-width: 150px;
+  padding: 10px 20px;
 
 }
 .btn-secondary:hover{
-  background-color: #dbe0eb;
-  border: none;
-  color: var(--texto);
+  background-color: var(--bs-btn-hover-bg)!important;
+  color: fff;
+  border: none!important;
 }
-
+.btn-secondary:focus,.btn-secondary:focus-visible{
+   box-shadow: none!important;
+ border: none!important;
+}
  .btn-tercero{
   background-color: var(--bs-red)!important;
   color: #fff;

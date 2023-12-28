@@ -5,7 +5,7 @@
           </div>
           <div class="card-body p-4 mt-3">
             <form method="post" id="reset" class="needs-validation " novalidate>
-              <input type="hidden" class="csrf_token" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+              <input type="hidden" class="csrfToken" name="csrfToken" value="<?php echo $_SESSION['csrfToken']; ?>">
               <input type="hidden" id="rpuser_token" name="rpuser_token" value="">
                <div class="mb-3 col-sm-12">
                 <label class="form-label" for="reset_password">Contraseña</label>

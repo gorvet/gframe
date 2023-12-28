@@ -91,11 +91,19 @@ private function getAdminParams($uri){
         $actionName=$uri[2];
     }
 
-    $params=[
-        'templateName' => $templateName, 
-        'moduleName' => $moduleName, 
-        'actionName' => $actionName
-    ];
+    
+     //si no está logueado no permitir la ruta al admin
+if (!isset($_SESSION['userID'])) {
+    header("Location: " . site_url . "/login");
+    exit();
+  }
+else{
+$params=[
+    'templateName' => $templateName, 
+    'moduleName' => $moduleName, 
+    'actionName' => $actionName,
+];
+}
     return $params;
 
 }
@@ -116,12 +124,20 @@ private function getAuthParams($uri){
     $actionName = strpos($actionName, '?') !== false ? strstr($actionName, '?', true) : $actionName;
 
     }
+
+ //si está logueado no tiene sentido permitir la ruta al auth
+if (isset($_SESSION['userID'])) {
+     header("Location: " . site_url . "/admin");
+    exit();
+  }
+else{
 $params=[
     'templateName' => $templateName, 
     'moduleName' => $moduleName, 
     'actionName' => $actionName,
- 
 ];
+}   
+
 return $params;
 }
 

@@ -58,6 +58,7 @@ function swalAlert(swalOptions) {
 		customClass: {
 			confirmButton: "btn btn-primary",
 			denyButton: "btn btn-tercero",
+			cancelButton: "btn btn-secondary",
 		},
 	};
   const options = mergeDeep(defaultOptions, swalOptions);

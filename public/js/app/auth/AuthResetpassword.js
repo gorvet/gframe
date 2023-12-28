@@ -5,7 +5,7 @@
   "use strict";
 
 // Inicializamos valores
-var toLogin = getNewURL('login')+'/login'// obtener la ruta
+var toLogin = getNewURL('login')+'/login'
 var urlParams = new URLSearchParams(window.location.search);
 var rptoken = urlParams.get('rp');
 if (rptoken) {

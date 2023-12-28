@@ -47,6 +47,7 @@ class MetasController
             '/public/js/utils/utils.js',
             '/public/js/utils/alertToast.js',
             '/public/vendor/sweetalert2/sweetalert2.all.min.js',
+            '/public/js/app/auth/AuthLogout.js',
         ]);
     }
 

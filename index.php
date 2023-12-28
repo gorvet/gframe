@@ -45,13 +45,16 @@ require_once 'core/Config.php';
 require_once 'core/Router.php';
 require_once 'app/controllers/RenderController.php';
 
-
 session_start();
 
 // Generar token CSRF 
-if (!isset($_SESSION['csrf_token']) ) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+if (!isset($_SESSION['csrfToken']) ) {
+    $_SESSION['csrfToken'] = bin2hex(random_bytes(32));
 } 
+// Actualizar la última actividad del usuario
+if (isset($_SESSION['lastActivity'])) {
+    $_SESSION['lastActivity'] = time();
+}
 
 $renderController = new RenderController();
 $router = new Router($renderController);

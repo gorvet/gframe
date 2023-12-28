@@ -8,12 +8,7 @@
 // Inicializamos valores
 var toAdmin = getNewURL('login')+'/admin'// obtener la ruta
 
-$(window).on('load', function() {
-
-});
-
-
-
+ 
 //Login
 $('#submit_login').on('click', function(event) {
  var form = $('#login');
@@ -64,8 +59,8 @@ function login(){
       }
     },
     error: function(xhr, status, error) {
-      //alertOptions.title = ajaxError(status, error)
-      //alertToast(alertOptions);
+      alertOptions.title = ajaxError(status, error)
+      alertToast(alertOptions);
     }
   });
 }

@@ -10,26 +10,32 @@
       <ul class="d-flex align-items-center">
         <li class="nav-item me-3">
           <?php if (isset($_SESSION['userEmail'])){
-             echo 'Hola, '. $_SESSION['userEmail'];
+            $user=explode("@", $_SESSION['userEmail']);
+
+             echo 'Hola, '.$user[0];
           }?>
         </li>
-        <li class="nav-item me-3">
-          <a class="scrollto active nav-link" href="#">Inicio</a></li>
-          <li class="nav-item me-3">
-            <a class="nav-link scrollto" href="admin">Admin</a>
-          </li>
-          <li class="nav-item me-3">
-            <?php if (isset($_SESSION['userID'])): ?>
-              <a id="bregister" class="nav-link" href="#">Salir</a>
-            <?php else: ?> 
-            <a id="blogin" class="nav-link" href="login">Entrar</a>
 
-            <?php endif ?>
+         
+          <?php if (isset($_SESSION['userID'])): ?>
+             <li class="nav-item me-3">
+            <a class="nav-link" href="admin">Dashboard</a>
           </li>
-           
           <li class="nav-item me-3">
-            <a id="bregister" class="nav-link" href="login/register">Crear Cuenta</a>
+            <a id="logout" class="nav-link" href="#">Salir</a>
           </li>
+            <?php else: ?> 
+            <li class="nav-item me-3">
+            <a  class="nav-link" href="login">Entrar</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="login/register">Crear Cuenta</a>
+          </li>
+            <?php endif ?>
+        
+          
+           
+          
         </ul>
       </nav><!-- End Icons Navigation -->
     </div>
